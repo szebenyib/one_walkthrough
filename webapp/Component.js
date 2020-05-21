@@ -9,12 +9,7 @@ sap.ui.define([
   "use strict";
   return UIComponent.extend("one_walkthrough.Component", {
     metadata: {
-      rootView: {
-        "viewName": "one_walkthrough.view.App",
-        "type": "XML",
-        "async": true,
-        "id": "app"
-      }
+      manifest: "json"
     },
     init: function() {
       UIComponent.prototype.init.apply(this, arguments);
