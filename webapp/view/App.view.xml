@@ -3,27 +3,29 @@
   xmlns:mvc="sap.ui.core.mvc"
   controllerName="one_walkthrough.controller.App"
   displayBlock="true">
-  <App>
-    <pages>
-      <Page
-        id="app_page"
-        title="{i18n>homePageTitle}">
-        <content>
-          <Panel
-            title="{i18n>helloPanelTitle}">
-            <content>
-              <Button
-                text="{i18n>showHelloButtonText}"
-                press="onShowHello"/>
-              <Input
-                value="{/recipient/name}"
-                description="Hello {/recipient/name}"
-                valueLiveUpdate="true"
-                width="60%"/>
-            </content>
-          </Panel>
-        </content>
-      </Page>
-    </pages>
-  </App>
+  <Shell>
+    <App>
+      <pages>
+        <Page
+          id="app_page"
+          title="{i18n>homePageTitle}">
+          <content>
+            <Panel
+              title="{i18n>helloPanelTitle}">
+              <content>
+                <Button
+                  text="{i18n>showHelloButtonText}"
+                  press="onShowHello"/>
+                <Input
+                  value="{/recipient/name}"
+                  description="Hello {/recipient/name}"
+                  valueLiveUpdate="true"
+                  width="60%"/>
+              </content>
+            </Panel>
+          </content>
+        </Page>
+      </pages>
+    </App>
+  </Shell>
 </mvc:View>
