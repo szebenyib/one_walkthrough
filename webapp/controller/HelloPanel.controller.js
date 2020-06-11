@@ -19,7 +19,8 @@ sap.ui.define([
       if (!this.byId("helloDialog")) {
         Fragment.load({
           id: oView.getId(),
-          name: "one_walkthrough.view.HelloDialog"
+          name: "one_walkthrough.view.HelloDialog",
+          controller: this
         }).then(function (oDialog){
           oView.addDependent(oDialog);
           oDialog.open();
@@ -27,6 +28,9 @@ sap.ui.define([
       } else {
         this.byId("helloDialog").open();
       }
+    },
+    onCloseDialog: function() {
+      this.byId("helloDialog").close();
     }
   });
 });
