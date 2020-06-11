@@ -9,6 +9,11 @@
         <Page
           id="app_page"
           title="{i18n>homePageTitle}">
+          <headerContent>
+            <Button
+              icon="sap-icon://hello-world"
+              press="onOpenDialog"/>
+          </headerContent>
           <content>
             <mvc:XMLView
               viewName="one_walkthrough.view.HelloPanel"/>
