@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bsync": "npx browser-sync start --proxy localhost --serveStatic .\\webapp",
+    "less_to_css": "npx lessc webapp/css/style.less webapp/css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/szebenyib/one_walkthrough#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "lessc": "^1.0.2"
   }
 }
