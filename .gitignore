@@ -31,3 +31,6 @@ out
 .idea/workspace.xml
 
 # Comment
+
+# Eslint
+eslint_output.txt
