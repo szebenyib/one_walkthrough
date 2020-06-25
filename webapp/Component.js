@@ -35,5 +35,5 @@ sap.ui.define([
     openHelloDialog: function() {
       this._helloDialog.open();
     }
-  })
+  });
 });

@@ -1,7 +1,7 @@
 sap.ui.define([
   "sap/ui/base/ManagedObject",
   "sap/ui/core/Fragment"
-], function(ManagedObject, Fragment){
+], function(ManagedObject, Fragment) {
   "use strict";
   return ManagedObject.extend("one_walkthrough.controller.HelloDialog", {
     constructor: function(oView) {
@@ -22,7 +22,7 @@ sap.ui.define([
           id: oView.getId(),
           name: "one_walkthrough.view.HelloDialog",
           controller: oFragmentController
-        }).then(function (oDialog){
+        }).then(function(oDialog) {
           oView.addDependent(oDialog);
           oDialog.open();
         });
@@ -30,5 +30,5 @@ sap.ui.define([
         oView.byId("helloDialog").open();
       }
     }
-  })
+  });
 });
