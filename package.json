@@ -23,6 +23,13 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "eslint": "^7.3.1",
+    "husky": "^4.2.5",
     "lessc": "^1.0.2"
+  },
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run less_to_css && npm run lint_silent"
+    }
   }
 }
