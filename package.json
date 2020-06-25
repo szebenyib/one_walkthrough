@@ -6,7 +6,9 @@
   "scripts": {
     "bsync": "npx browser-sync start --proxy localhost --serveStatic .\\webapp",
     "less_to_css": "npx lessc webapp/css/style.less webapp/css/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint_no_output": "npm run lint > /dev/null"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/szebenyib/one_walkthrough#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "eslint": "^7.3.1",
     "lessc": "^1.0.2"
   }
 }
