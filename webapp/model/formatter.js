@@ -19,7 +19,7 @@ sap.ui.define([
         default:
           sResult = sStatus;
       }
-      return sResult + "*"; 
+      return sResult + "*";
     }
-  }
-})
+  };
+});

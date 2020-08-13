@@ -4,10 +4,10 @@ sap.ui.define([
   "one_walkthrough/localService/mockserver",
   "sap/ui/test/opaQunit",
   "./pages/App"
-], function (mockserver) {
+], function(mockserver) {
   "use strict";
   QUnit.module("Navigation");
-  opaTest("Vajon megnyílik a Hello dialógus?", function (Given, When, Then) {
+  opaTest("Vajon megnyílik a Hello dialógus?", function(Given, When, Then) {
 		// initialize the mock server
 		mockserver.init();
 

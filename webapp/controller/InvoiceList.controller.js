@@ -26,7 +26,7 @@ sap.ui.define([
         if (sQuery) {
           aFilter.push(
             new Filter("ProductName", FilterOperator.Contains, sQuery)
-          )
+          );
         }
         var oList = this.byId("invoiceList");
         var oBinding = oList.getBinding("items");
