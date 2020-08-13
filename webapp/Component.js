@@ -26,7 +26,10 @@ sap.ui.define([
         bundleName: "one_walkthrough.i18n.i18n"
       });
       this.setModel(oI18nModel, "i18n");
+      // set dialog
       this._helloDialog = new HelloDialog(this.getRootControl());
+      // create the views based on the url/hash
+			this.getRouter().initialize();
     },
     exit: function() {
       this._helloDialog.destroy();
