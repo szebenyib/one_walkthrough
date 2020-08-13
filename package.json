@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "eslint": "npx eslint .",
     "less_to_css": "npx lessc webapp/css/style.less webapp/css/style.css",
     "bsync": "npx browser-sync start --server \"webapp\" --directory --serveStatic \"..\" --files \"webapp/css/*.css\" --no-open",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/szebenyib/one_walkthrough#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "eslint": "^7.6.0",
     "lessc": "^1.0.2"
   }
 }
