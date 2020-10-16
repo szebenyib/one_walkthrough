@@ -8,6 +8,7 @@
     "eslint_fix": "npx eslint . --fix",
     "less_to_css": "npx lessc webapp/css/style.less webapp/css/style.css",
     "bsync": "npx browser-sync start --server \"webapp\" --directory --serveStatic \"..\" --files \"webapp/css/*.css\" --no-open",
+    "wbsync": "npx browser-sync start --server \"webapp\" --directory --serveStatic \"..\" --files \"webapp\\css\\*.css\" --no-open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
